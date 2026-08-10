@@ -2,4 +2,5 @@
 
 ## Intro
 Vi lærer hinanden at kende
-- Program
+- Program https://github.com/louissse/programmering-b-2026/blob/main/01_Intro/intro.md
+
