@@ -100,6 +100,29 @@ section > p:last-child {
   margin-bottom: 28px;
 }
 
+.week-overview {
+  margin-bottom: 28px;
+  padding: 18px 20px;
+  border-left: 3px solid var(--heading);
+  background: #f7f7f7;
+}
+
+.week-overview p {
+  margin-bottom: 0;
+}
+
+.week-number {
+  color: var(--heading);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.week-overview .week-number {
+  margin-bottom: 5px;
+}
+
 a {
   color: var(--heading);
   text-decoration: none;
@@ -114,41 +137,169 @@ a:focus-visible {
   outline: none;
 }
 
-.course-list,
 .link-list {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.course-list li {
-  display: grid;
-  grid-template-columns: 42px 1fr;
-  gap: 18px;
-  padding-block: 20px;
+.material-list {
   border-top: 1px solid var(--line);
 }
 
-.course-list li:last-child {
+.material-card {
   border-bottom: 1px solid var(--line);
 }
 
-.course-list p {
-  margin-bottom: 0;
+.material-card summary {
+  display: grid;
+  grid-template-columns: 42px 1fr auto;
+  gap: 18px;
+  align-items: start;
+  padding-block: 22px;
+  color: var(--heading);
+  cursor: pointer;
+  list-style: none;
 }
 
-.course-number {
+.material-card summary::-webkit-details-marker {
+  display: none;
+}
+
+.material-card summary:hover .summary-text strong,
+.material-card summary:focus-visible .summary-text strong {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.material-card summary:focus-visible {
+  outline: 2px solid var(--heading);
+  outline-offset: 5px;
+}
+
+.course-number,
+.toggle-label {
   color: var(--muted);
   font-size: 13px;
   font-weight: 500;
 }
 
-.course-list .is-upcoming {
-  color: var(--muted);
+.summary-text strong,
+.summary-text span {
+  display: block;
 }
 
-.course-list .is-upcoming h3 {
-  color: var(--muted);
+.summary-text strong {
+  margin-bottom: 3px;
+}
+
+.summary-text span {
+  color: var(--text);
+  font-size: 14px;
+}
+
+.toggle-label::after {
+  content: " +";
+}
+
+.material-card[open] .toggle-label {
+  color: var(--heading);
+}
+
+.material-card[open] .toggle-label::before {
+  content: "Luk";
+}
+
+.material-card[open] .toggle-label {
+  font-size: 0;
+}
+
+.material-card[open] .toggle-label::before,
+.material-card[open] .toggle-label::after {
+  font-size: 13px;
+}
+
+.material-card[open] .toggle-label::after {
+  content: " −";
+}
+
+.material-content {
+  padding: 6px 0 48px 60px;
+}
+
+.material-content h3 {
+  margin-top: 32px;
+  margin-bottom: 12px;
+}
+
+.learning-goal,
+.assignment-intro {
+  color: var(--heading);
+  font-size: 17px;
+}
+
+.steps,
+.requirements {
+  margin: 0;
+  padding-left: 24px;
+}
+
+.steps li,
+.requirements li {
+  margin-bottom: 12px;
+  padding-left: 6px;
+}
+
+code {
+  padding: 0.08em 0.3em;
+  background: #f1f1f1;
+  color: var(--heading);
+  font-family: inherit;
+  font-size: 0.92em;
+}
+
+.try-box,
+.stretch-box,
+.inspiration-box {
+  margin-top: 32px;
+  padding: 22px 24px;
+  border-left: 3px solid var(--heading);
+  background: #f7f7f7;
+}
+
+.try-box h3,
+.stretch-box h3,
+.inspiration-box h3 {
+  margin-top: 0;
+}
+
+.try-box p,
+.stretch-box ul,
+.inspiration-box p {
+  margin-bottom: 0;
+}
+
+.stretch-box ul {
+  padding-left: 20px;
+}
+
+.stretch-box li {
+  margin-bottom: 8px;
+}
+
+.stretch-box li:last-child {
+  margin-bottom: 0;
+}
+
+.hand-in {
+  margin-top: 32px;
+}
+
+.primary-link {
+  display: inline-block;
+  padding: 8px 10px;
+  border: 1px solid var(--heading);
+  font-weight: 500;
 }
 
 .link-list li {
@@ -189,9 +340,13 @@ footer p {
     margin-bottom: 60px;
   }
 
-  .course-list li {
-    grid-template-columns: 34px 1fr;
+  .material-card summary {
+    grid-template-columns: 30px 1fr auto;
     gap: 10px;
+  }
+
+  .material-content {
+    padding-left: 40px;
   }
 }
 

@@ -36,26 +36,174 @@
       <section aria-labelledby="forloeb">
         <h2 id="forloeb">Forløb og materialer</h2>
         <p class="section-note">
-          Undervisningsmaterialer og opgaver bliver lagt ind her, efterhånden
-          som vi arbejder med dem.
+          Åbn dagens forløb, hvis du følger undervisningen trin for trin. Har du
+          programmeret før, kan du gå direkte til albumcover-opgaven.
         </p>
 
-        <ol class="course-list">
-          <li>
-            <span class="course-number" aria-hidden="true">01</span>
-            <div>
-              <h3>Introduktion</h3>
-              <p>Vi lærer hinanden, faget og vores værktøjer at kende.</p>
+        <div class="week-overview">
+          <p class="week-number">Uge 34</p>
+          <p>
+            <strong>Ugens pensum:</strong>
+            <a
+              href="https://thecodingtrain.com/tracks/code-programming-with-p5-js/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Getting Started
+            </a>
+            og
+            <a
+              href="https://thecodingtrain.com/tracks/code-programming-with-p5-js/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Variables
+            </a>
+            fra The Coding Train.
+          </p>
+        </div>
+
+        <div class="material-list">
+          <details class="material-card">
+            <summary>
+              <span class="course-number" aria-hidden="true">01</span>
+              <span class="summary-text">
+                <strong>Intro til p5.js</strong>
+                <span>Former, koordinater, variable og musen</span>
+              </span>
+              <span class="toggle-label" aria-hidden="true">Åbn</span>
+            </summary>
+
+            <div class="material-content">
+              <p class="learning-goal">
+                <strong>Mål:</strong> Du kan lave og gemme en p5.js-skitse,
+                tegne simple figurer og bruge variable og musens position til
+                at ændre dit billede.
+              </p>
+
+              <h3>Dagens forløb</h3>
+              <ol class="steps">
+                <li>
+                  <strong>Kom i gang.</strong> Åbn p5.js Web Editor, og se
+                  hvordan <code>setup()</code>, <code>draw()</code> og
+                  <code>createCanvas()</code> bygger en skitse op.
+                </li>
+                <li>
+                  <strong>Tegn med kode.</strong> Prøv selv at skabe et lille
+                  billede med cirkler, ellipser, rektangler og linjer. Skift
+                  farver, størrelser og placeringer ved at ændre ét tal ad
+                  gangen.
+                </li>
+                <li>
+                  <strong>Brug variable.</strong> Gem en placering, størrelse
+                  eller farve i en variabel, og brug variablen flere steder i
+                  din skitse. Ændr værdien, og undersøg hvad der sker.
+                </li>
+                <li>
+                  <strong>Gør billedet interaktivt.</strong> Brug
+                  <code>mouseX</code> eller <code>mouseY</code> som placering
+                  eller størrelse på en figur. Bevæg musen hen over lærredet og
+                  se resultatet.
+                </li>
+              </ol>
+
+              <div class="try-box">
+                <h3>Prøv selv undervejs</h3>
+                <p>
+                  Lav din egen lille komposition. Den må gerne være skæv,
+                  enkel eller mærkelig. Målet er at undersøge, hvad koden gør —
+                  ikke at gøre den perfekt.
+                </p>
+              </div>
             </div>
-          </li>
-          <li class="is-upcoming">
-            <span class="course-number" aria-hidden="true">02</span>
-            <div>
-              <h3>Kommende forløb</h3>
-              <p>Næste materiale bliver tilføjet efter første undervisningsgang.</p>
+          </details>
+
+          <details class="material-card assignment-card">
+            <summary>
+              <span class="course-number" aria-hidden="true">02</span>
+              <span class="summary-text">
+                <strong>Opgave: Interaktivt albumcover</strong>
+                <span>Kan startes med det samme</span>
+              </span>
+              <span class="toggle-label" aria-hidden="true">Åbn</span>
+            </summary>
+
+            <div class="material-content">
+              <p class="assignment-intro">
+                Design et albumcover i p5.js, og gør det levende med variable
+                og musens position. Du kan fortolke et cover, du allerede kan
+                lide, eller opfinde en kunstner og et album selv.
+              </p>
+
+              <div class="inspiration-box">
+                <h3>Find inspiration</h3>
+                <p>
+                  Se eksempler på
+                  <a
+                    href="https://dk.pinterest.com/louisehpfner/album-art-programming/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Pinterest-boardet Album art – programming
+                  </a>.
+                  Find et cover med former, farver eller mønstre, du synes er
+                  interessante. Brug det som inspiration — du behøver ikke
+                  kopiere det præcist.
+                </p>
+              </div>
+
+              <h3>Dit albumcover skal</h3>
+              <ul class="requirements">
+                <li>have et kvadratisk lærred og en tydelig baggrund,</li>
+                <li>bruge mindst tre forskellige simple figurer,</li>
+                <li>bruge farver og former bevidst som en del af designet,</li>
+                <li>bruge mindst to variable, du selv har oprettet, og</li>
+                <li>
+                  reagere tydeligt på <code>mouseX</code> og/eller
+                  <code>mouseY</code>.
+                </li>
+              </ul>
+
+              <h3>Sådan kan du arbejde</h3>
+              <ol class="steps">
+                <li>Vælg en idé, og lav eventuelt en hurtig skitse på papir.</li>
+                <li>Byg først coveret med simple, stillestående figurer.</li>
+                <li>Flyt gentagne værdier over i dine egne variable.</li>
+                <li>
+                  Vælg hvad musen skal styre: placering, størrelse, afstand,
+                  farve eller noget helt andet.
+                </li>
+                <li>Afprøv, justér og giv skitsen et navn i editoren.</li>
+              </ol>
+
+              <div class="stretch-box">
+                <h3>Ekstra udfordringer</h3>
+                <ul>
+                  <li>Lad musens vandrette og lodrette position styre hver sin ting.</li>
+                  <li>Få en del af designet til at bevæge sig af sig selv.</li>
+                  <li>Tilføj kunstnernavn og albumtitel som tekst.</li>
+                  <li>Find på en interaktion, der overrasker brugeren.</li>
+                </ul>
+              </div>
+
+              <p class="hand-in">
+                <strong>Når du er færdig:</strong> Gem skitsen, og del linket
+                med din underviser.
+              </p>
+
+              <p>
+                <a
+                  class="primary-link"
+                  href="https://editor.p5js.org/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Åbn p5.js Web Editor →
+                </a>
+              </p>
             </div>
-          </li>
-        </ol>
+          </details>
+        </div>
       </section>
 
       <section aria-labelledby="vaerktoejer">
@@ -72,6 +220,16 @@
               p5.js Reference
             </a>
             <span>Opslagsværk til funktioner, variable og eksempler.</span>
+          </li>
+          <li>
+            <a
+              href="https://p5js.org/tutorials/variables-and-change/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Variable og forandring
+            </a>
+            <span>Officiel p5.js-guide til variable og bevægelse.</span>
           </li>
           <li>
             <a href="https://github.com/" target="_blank" rel="noreferrer">
