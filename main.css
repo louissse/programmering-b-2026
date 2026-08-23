@@ -43,6 +43,7 @@ footer {
   margin-bottom: 48px;
   padding: 18px 20px;
   border: 1px solid var(--heading);
+  background: #d7ff62;
   background: var(--accent);
   color: var(--heading);
   text-decoration: none;
@@ -427,7 +428,15 @@ code {
   display: inline-block;
   padding: 8px 10px;
   border: 1px solid var(--heading);
+  background: #d7ff62;
+  color: var(--heading);
   font-weight: 500;
+}
+
+.primary-link:hover,
+.primary-link:focus-visible {
+  background: var(--heading);
+  color: var(--background);
 }
 
 .link-list li {
