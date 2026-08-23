@@ -15,7 +15,8 @@ Materialet bliver samlet på kursets hjemmeside:
 ```text
 programmering-b-2026/
 ├── index.html       # Forsiden til undervisningssiden
-└── main.css         # Sidens udseende
+├── main.css         # Sidens udseende
+└── studietur/       # Særlig opgaveside til dataindsamling på studietur
 ```
 
 Nye forløb får deres egen nummererede mappe, så materialerne bliver vist i den

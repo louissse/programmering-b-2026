@@ -5,6 +5,8 @@
   --heading: #111111;
   --muted: #999999;
   --line: #dddddd;
+  --accent: #d7ff62;
+  --accent-soft: #f4ffd1;
   --max-width: 760px;
 }
 
@@ -36,8 +38,46 @@ footer {
   padding-block: 80px 40px;
 }
 
+.top-banner {
+  display: block;
+  margin-bottom: 48px;
+  padding: 18px 20px;
+  border: 1px solid var(--heading);
+  background: var(--accent);
+  color: var(--heading);
+  text-decoration: none;
+}
+
+.top-banner:hover,
+.top-banner:focus-visible {
+  background: var(--heading);
+  color: var(--background);
+}
+
+.top-banner span,
+.top-banner strong {
+  display: block;
+}
+
+.top-banner span {
+  margin-bottom: 4px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.top-banner strong {
+  font-size: clamp(17px, 3vw, 22px);
+  line-height: 1.35;
+}
+
 .site-header {
   margin-bottom: 88px;
+}
+
+.compact-header {
+  margin-bottom: 64px;
 }
 
 .eyebrow {
@@ -135,6 +175,10 @@ a:focus-visible {
   background: var(--heading);
   color: var(--background);
   outline: none;
+}
+
+.back-link {
+  margin-bottom: 42px;
 }
 
 .link-list {
@@ -256,6 +300,90 @@ code {
   color: var(--heading);
   font-family: inherit;
   font-size: 0.92em;
+}
+
+.action-box {
+  margin-top: 32px;
+  padding: 24px;
+  border-left: 3px solid var(--heading);
+  background: var(--accent-soft);
+}
+
+.action-box h2 {
+  margin-bottom: 10px;
+}
+
+.primary-link {
+  display: inline-block;
+  margin-top: 8px;
+  font-weight: 500;
+}
+
+.field-table {
+  border-top: 1px solid var(--line);
+}
+
+.field-row {
+  display: grid;
+  grid-template-columns: minmax(150px, 1fr) minmax(110px, 0.7fr) minmax(220px, 1.6fr);
+  gap: 18px;
+  padding-block: 14px;
+  border-bottom: 1px solid var(--line);
+}
+
+.field-header {
+  color: var(--heading);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.code-block {
+  overflow-x: auto;
+  margin: 24px 0 0;
+  padding: 20px;
+  background: #f7f7f7;
+  color: var(--heading);
+  font-family: inherit;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.code-block code {
+  padding: 0;
+  background: transparent;
+}
+
+@media (max-width: 680px) {
+  #wrapper {
+    padding-block: 48px 32px;
+  }
+
+  .site-header {
+    margin-bottom: 60px;
+  }
+
+  .material-card summary {
+    grid-template-columns: 32px 1fr;
+  }
+
+  .toggle-label {
+    grid-column: 2;
+  }
+
+  .material-content {
+    padding-left: 0;
+  }
+
+  .field-row {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+
+  .field-header {
+    display: none;
+  }
 }
 
 .try-box,

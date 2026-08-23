@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="da">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Opgave til studieturen: indsamling af data om steder, øjeblikke og mønstre."
+    >
+    <title>Studieturens mini-database · Programmering B</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="../main.css">
+  </head>
+
+  <body>
+    <main id="wrapper">
+      <p class="back-link"><a href="../">Tilbage til forsiden</a></p>
+
+      <header class="site-header compact-header">
+        <p class="eyebrow">Studietur · dataindsamling</p>
+        <h1>Studieturens mini-database</h1>
+        <p class="intro">
+          I skal indsamle data om steder og øjeblikke fra turen. Når
+          vi kommer hjem, bruger vi jeres data til at sortere, filtrere,
+          visualisere og kode små digitale guides.
+        </p>
+      </header>
+
+      <section aria-labelledby="opgave">
+        <h2 id="opgave">Opgaven</h2>
+        <p>
+          Hver værelsesgruppe indsamler <strong>6-10 datapunkter</strong> i
+          løbet af ugen. Det behøver ikke kun være klassiske turiststeder. Led
+          også efter små fund fra turen: et sted, en situation, en
+          snack, en udsigt, et transporthack, et godt pausepunkt eller et
+          "her ville jeg anbefale næste gang en klasse er på studietur til Budapest".
+        </p>
+        <p>
+          Hver gang I finder noget, udfylder I formularen. Brug korte, præcise
+          svar, så datapunktet kan forstås af andre og bruges i kode senere.
+        </p>
+
+        <div class="action-box">
+          <h2>Indsend et datapunkt</h2>
+          <p>
+            Formularen åbner i en ny fane. Du skal logge ind med din
+            skolekonto, før du kan indsende et svar.
+          </p>
+          <a
+            class="primary-link"
+            href="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=wQmfAW_r3U6S1AeUjAUblxjryQm7GfNFm0Q9gsQ5cG1UOU9VSlZINTQ0RUhSVzVZS1Y0TFhUR0VETS4u"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Åbn formular
+          </a>
+        </div>
+      </section>
+
+      <section aria-labelledby="hvad-skal-i-finde">
+        <h2 id="hvad-skal-i-finde">Hvad skal I finde?</h2>
+        <ul class="requirements">
+          <li>mindst tre steder eller oplevelser, I vil anbefale,</li>
+          <li>mindst et overraskende fund,</li>
+          <li>mindst et praktisk tip, og</li>
+          <li>mindst et datapunkt, der siger noget om byen eller turen.</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="felter">
+        <h2 id="felter">Felter i datasættet</h2>
+        <p class="section-note">
+          Alle grupper bruger samme felter, så vi får et samlet datasæt i et
+          ens format.
+        </p>
+
+        <div class="field-table" role="table" aria-label="Felter i datasættet">
+          <div class="field-row field-header" role="row">
+            <span role="columnheader">Felt</span>
+            <span role="columnheader">Type</span>
+            <span role="columnheader">Eksempel</span>
+          </div>
+          <div class="field-row" role="row">
+            <span role="cell"><code>gruppe</code></span>
+            <span role="cell">tekst</span>
+            <span role="cell">Værelse 12</span>
+          </div>
+          <div class="field-row" role="row">
+            <span role="cell"><code>titel</code></span>
+            <span role="cell">tekst</span>
+            <span role="cell">Den bedste pausebænk ved kanalen</span>
+          </div>
+          <div class="field-row" role="row">
+            <span role="cell"><code>kategori</code></span>
+            <span role="cell">valg</span>
+            <span role="cell">mad, udsigt, kultur, pause, transport, aktivitet</span>
+          </div>
+          <div class="field-row" role="row">
+            <span role="cell"><code>kort_beskrivelse</code></span>
+            <span role="cell">tekst</span>
+            <span role="cell">Et roligt sted tæt på museet med god udsigt</span>
+          </div>
+          <div class="field-row" role="row">
+            <span role="cell"><code>hvorfor_anbefaler_vi_det</code></span>
+            <span role="cell">tekst</span>
+            <span role="cell">Det var et godt sted at lande efter en lang gåtur</span>
+          </div>
+          <div class="field-row" role="row">
+            <span role="cell"><code>stemning</code></span>
+            <span role="cell">valg</span>
+            <span role="cell">roligt, sjovt, mærkeligt, flot, hyggeligt</span>
+          </div>
+          <div class="field-row" role="row">
+            <span role="cell"><code>prisniveau</code></span>
+            <span role="cell">valg</span>
+            <span role="cell">0 = gratis, 1 = billigt, 2 = mellem, 3 = dyrt</span>
+          </div>
+          <div class="field-row" role="row">
+            <span role="cell"><code>stjerner</code></span>
+            <span role="cell">tal</span>
+            <span role="cell">1-5</span>
+          </div>
+          <div class="field-row" role="row">
+            <span role="cell"><code>gps_lat</code> og <code>gps_lon</code></span>
+            <span role="cell">tal</span>
+            <span role="cell">52.3702 og 4.8952</span>
+          </div>
+
+          <div class="field-row" role="row">
+            <span role="cell"><code>billede_filnavn</code></span>
+            <span role="cell">billed-fil</span>
+            <span role="cell">kanalbaenk.jpg</span>
+          </div>
+        </div>
+      </section>
+
+      <section aria-labelledby="godt-datapunkt">
+        <h2 id="godt-datapunkt">Et godt datapunkt</h2>
+        <p>
+          Et godt datapunkt er konkret nok til, at en anden gruppe kan forstå
+          stedet eller oplevelsen uden at have været der sammen med jer.
+        </p>
+        <pre class="code-block"><code>{
+  "gruppe": "Værelse 12",
+  "titel": "Den bedste pausebænk ved kanalen",
+  "kategori": "pause",
+  "kort_beskrivelse": "Et roligt sted tæt på museet med god udsigt.",
+  "hvorfor_anbefaler_vi_det": "Godt sted at trække vejret efter mange indtryk.",
+  "stemning": "roligt",
+  "prisniveau": 0,
+  "stjerner": 5,
+  "gps_lat": 52.3702,
+  "gps_lon": 4.8952,
+  "billede_filnavn": "kanalbaenk.jpg",
+}</code></pre>
+      </section>
+    </main>
+
+    <footer>
+      <p>Programmering B · Louise Høpfner · 2026</p>
+    </footer>
+  </body>
+</html>
