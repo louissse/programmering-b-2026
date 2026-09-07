@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;500;700&amp;display=swap"
       rel="stylesheet"
     >
     <link rel="stylesheet" href="main.css?v=2026-08-23">
@@ -122,13 +122,128 @@
               </div>
             </div>
           </details>
+        </div>
 
+        <div class="week-overview">
+          <p class="week-number">Uge 36</p>
+          <p>
+            <strong>Ugens pensum:</strong>
+            <a
+              href="https://thecodingtrain.com/tracks/code-programming-with-p5-js/code/3-conditionals/1-conditionals/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Conditional Statements
+            </a>
+            fra The Coding Train. Før vi går i gang med conditionals, arbejder
+            vi med <code>random()</code>, <code>map()</code> og
+            <code>createGraphics()</code>.
+          </p>
+        </div>
+
+        <div class="material-list">
           <details class="material-card assignment-card">
             <summary>
               <span class="course-number" aria-hidden="true">02</span>
               <span class="summary-text">
+                <strong>random, map og conditionals</strong>
+                <span>Fra variation til valg i koden</span>
+              </span>
+              <span class="toggle-label" aria-hidden="true">Åbn</span>
+            </summary>
+
+            <div class="material-content">
+              <p class="learning-goal">
+                <strong>Mål:</strong> Du kan bruge <code>random()</code> til
+                variation, <code>map()</code> til at omsætte musens position
+                til nye værdier og <code>if</code> til at få en skitse til at
+                reagere forskelligt i forskellige situationer.
+              </p>
+
+              <h3>Først: se og prøv</h3>
+              <ol class="steps">
+                <li>
+                  Se videoerne om
+                  <a
+                    href="https://thecodingtrain.com/tracks/code-programming-with-p5-js/code/2-variables/4-random/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <code>random()</code>
+                  </a>,
+                  <a
+                    href="https://thecodingtrain.com/tracks/code-programming-with-p5-js/code/2-variables/5-map/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <code>map()</code>
+                  </a>
+                  og
+                  <a
+                    href="https://thecodingtrain.com/tracks/code-programming-with-p5-js/code/2-variables/6-creategraphics/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <code>createGraphics()</code>
+                  </a>
+                  fra The Coding Train.
+                </li>
+                <li>
+                  Åbn en skitse, du allerede har lavet, eller start en ny i
+                  p5.js Web Editor.
+                </li>
+                <li>
+                  Tilføj mindst <code>random()</code> og <code>map()</code> til
+                  skitsen. Du kan for eksempel lade farver, størrelser eller
+                  placeringer ændre sig.
+                </li>
+                <li>
+                  Hvis du har tid, så undersøg <code>createGraphics()</code> og
+                  prøv at tegne noget på et ekstra lag.
+                </li>
+              </ol>
+
+              <h3>Derefter: conditionals</h3>
+              <ol class="steps">
+                <li>
+                  Vi gennemgår boolean expressions, sammenligninger og
+                  <code>if</code>-sætninger sammen.
+                </li>
+                <li>
+                  Vi ser på, hvordan <code>mouseClicked()</code> kan bruges til
+                  at ændre noget i skitsen, når brugeren klikker.
+                </li>
+                <li>
+                  Du starter på
+                  <a href="#albumcover-opgave">albumcover-opgaven</a> og
+                  bruger de nye teknikker til at gøre coveret mere levende.
+                </li>
+              </ol>
+
+              <div class="try-box">
+                <h3>Miniøvelse</h3>
+                <p>
+                  Lav en lille skitse, hvor musens position ændrer mindst én
+                  værdi med <code>map()</code>, og hvor mindst én ting bliver
+                  valgt eller placeret med <code>random()</code>.
+                </p>
+              </div>
+            </div>
+          </details>
+
+        </div>
+      </section>
+
+      <section aria-labelledby="opgaver">
+        <h2 id="opgaver">Opgaver og Projekter</h2>
+
+        <div class="material-list">
+          <details id="albumcover-opgave" class="material-card assignment-card">
+            <summary>
+              <span class="course-number" aria-hidden="true">01</span>
+              <span class="summary-text">
                 <strong>Opgave: Interaktivt albumcover</strong>
-                <span>Kan startes med det samme</span>
+                <span>Brug variable, musen og conditionals</span>
               </span>
               <span class="toggle-label" aria-hidden="true">Åbn</span>
             </summary>
@@ -164,8 +279,12 @@
                 <li>bruge farver og former bevidst som en del af designet,</li>
                 <li>bruge mindst to variable, du selv har oprettet, og</li>
                 <li>
+                  bruge <code>random()</code> eller <code>map()</code> på en
+                  måde, der kan ses i coveret, og
+                </li>
+                <li>
                   reagere tydeligt på <code>mouseX</code> og/eller
-                  <code>mouseY</code>.
+                  <code>mouseY</code> og/eller <code>mouseClicked()</code>.
                 </li>
               </ul>
 
@@ -178,6 +297,10 @@
                   Vælg hvad musen skal styre: placering, størrelse, afstand,
                   farve eller noget helt andet.
                 </li>
+                <li>
+                  Tilføj en <code>if</code>-sætning, så coveret ændrer sig, når
+                  noget bestemt er sandt.
+                </li>
                 <li>Afprøv, justér og giv skitsen et navn i editoren.</li>
               </ol>
 
@@ -186,6 +309,7 @@
                 <ul>
                   <li>Lad musens vandrette og lodrette position styre hver sin ting.</li>
                   <li>Få en del af designet til at bevæge sig af sig selv.</li>
+                  <li>Brug <code>createGraphics()</code> til et ekstra lag.</li>
                   <li>Tilføj kunstnernavn og albumtitel som tekst.</li>
                   <li>Find på en interaktion, der overrasker brugeren.</li>
                 </ul>
