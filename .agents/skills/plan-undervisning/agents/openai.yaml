@@ -1,4 +1,0 @@
-interface:
-  display_name: "Planlæg undervisning"
-  short_description: "Planlæg Programmering B-forløb fra faggrundlaget"
-  default_prompt: "Brug $plan-undervisning til at planlægge et undervisningsforløb i Programmering B."
