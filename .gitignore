@@ -1,2 +1,2 @@
-# Lokale instruktioner til Codex
-AGENTS.md
+# Lokale arbejdsfiler, som ikke skal versionsstyres
+.local/

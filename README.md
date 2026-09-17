@@ -14,6 +14,8 @@ Materialet bliver samlet på kursets hjemmeside:
 
 ```text
 programmering-b-2026/
+├── .agents/         # Lokal skill til undervisningsplanlægning
+├── docs/            # Arbejdsgrundlag, faglige kilder og beslutninger
 ├── index.html       # Forsiden til undervisningssiden
 ├── main.css         # Sidens udseende
 └── studietur/       # Særlig opgaveside til dataindsamling på studietur
@@ -21,6 +23,12 @@ programmering-b-2026/
 
 Nye forløb får deres egen nummererede mappe, så materialerne bliver vist i den
 rækkefølge, vi arbejder med dem.
+
+## Dokumentation
+
+Agenters og underviseres arbejdsgrundlag findes i
+[`docs/README.md`](docs/README.md). Her ligger også de versionsbestemte
+officielle kilder til planlægning af Programmering B.
 
 ## Hent materialet
 
