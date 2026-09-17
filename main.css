@@ -285,8 +285,8 @@ a:focus-visible {
 
 .steps,
 .requirements {
-  margin: 0;
-  padding-left: 24px;
+  margin: 1.5rem 0 0;
+  padding-left: 36px;
 }
 
 .steps li,
@@ -409,7 +409,7 @@ code {
 }
 
 .stretch-box ul {
-  padding-left: 20px;
+  padding-left: 32px;
 }
 
 .stretch-box li {

@@ -265,19 +265,18 @@
         <div class="week-overview">
           <p class="week-number">Uge 38-39 · Tre faser</p>
           <p>
-            <strong>Snake: loops og arrays.</strong> Vi begynder med at spille
+            <strong>Snake med loops og arrays.</strong> Vi begynder med at spille
             og undersøge et færdigt Snake-spil. Derefter arbejder vi efter
-            modellen <em>use-modify-create</em>: først bruger og forstår du
-            spillet, så ændrer du det, og til sidst bygger du en større
-            udvidelse eller et nyt lille spil.
+            modellen <em>use-modify-create</em>. Først bruger og undersøger du
+            spillet. Så ændrer du det. Til sidst bygger du en større udvidelse
+            eller et nyt lille spil.
           </p>
           <p>
-            <strong>Arbejdsmetode:</strong> Vi arbejder iterativt. Det betyder,
-            at du planlægger ét lille trin, laver det, tester det og dokumenterer
-            resultatet, før du fortsætter.
+            <strong>Vi arbejder iterativt.</strong> Du planlægger ét lille trin,
+            laver det, tester det og skriver resultatet ned, før du fortsætter.
           </p>
           <p>
-            <strong>Forberedelse og opslagsværk:</strong>
+            <strong>Videoer om loops og arrays.</strong>
             <a
               href="https://thecodingtrain.com/tracks/code-programming-with-p5-js/code/4-loops/1-while-for/"
               target="_blank"
@@ -310,16 +309,16 @@
               <span class="course-number" aria-hidden="true">04</span>
               <span class="summary-text">
                 <strong>Fase 1: Spil, undersøg og tilpas Snake</strong>
-                <span>Use + Modify: forstå, afprøv og ændr</span>
+                <span>Use og Modify med fælles start og egne ændringer</span>
               </span>
               <span class="toggle-label" aria-hidden="true">Åbn</span>
             </summary>
 
             <div class="material-content">
               <p class="learning-goal">
-                <strong>Mål:</strong> Du kan beskrive spillets vigtigste dele,
-                forklare hvad spillet skal huske, finde et loop og et array i
-                koden samt lave og afprøve en synlig ændring.
+                <strong>Mål:</strong> Du kan beskrive spillets dele og forklare,
+                hvad spillet skal huske. Du kan finde et loop og et array i
+                koden. Du kan lave og teste en ændring.
               </p>
 
               <h3>1. Spil uden at se koden · 10 minutter</h3>
@@ -341,22 +340,22 @@
               <h3>2. Undersøg spillet i par · 15 minutter</h3>
               <p>
                 Diskutér spørgsmålene, og skriv jeres svar ned. I må gerne
-                tegne forbindelser mellem delene.
+                tegne, hvordan delene hænger sammen.
               </p>
               <ul class="requirements">
                 <li>Hvilke synlige dele består spillet af?</li>
                 <li>Hvilke ting skal spillet kunne huske?</li>
                 <li>Hvilket input giver spilleren?</li>
                 <li>Hvilke regler styrer bevægelse, vækst og game over?</li>
-                <li>Hvad bliver gentaget igen og igen?</li>
-                <li>Hvor tror I, at der findes loops i koden — og hvorfor?</li>
+                <li>Hvilke handlinger gentager spillet?</li>
+                <li>Hvor tror I, der findes loops i koden? Begrund jeres svar.</li>
                 <li>Hvad kunne et array bruges til i Snake?</li>
               </ul>
 
               <h3>3. Fælles opsamling · 10 minutter</h3>
               <p>
-                Vi samler jeres forslag på tavlen og ser især på jeres bud på,
-                hvad spillet skal huske, og hvor der kan være loops.
+                Vi samler jeres forslag på tavlen. Vi undersøger især, hvad
+                spillet skal huske, og hvor der kan være loops.
               </p>
 
               <h3>4. Mød koden · 15 minutter</h3>
@@ -387,7 +386,9 @@
                   Skift slangens, hovedets, madens og baggrundens farver.
                 </li>
                 <li>Ændr spillets hastighed i <code>frameRate()</code>.</li>
-                <li>Ændr cellestørrelsen, og undersøg konsekvensen.</li>
+                <li>
+                  Ændr cellestørrelsen, og se hvad der sker med spillefeltet.
+                </li>
                 <li>Ændr slangens startlængde eller startplacering.</li>
                 <li>Lav en selvvalgt synlig ændring.</li>
               </ol>
@@ -400,11 +401,11 @@
                 <h3>6. Exit · 5 minutter</h3>
                 <p>Gem din kode, og færdiggør de tre sætninger:</p>
                 <ul>
-                  <li>“Arrayet <code>snake</code> indeholder …”</li>
+                  <li>&quot;Arrayet <code>snake</code> indeholder ...&quot;</li>
                   <li>
-                    “Loopet i <code>drawSnake()</code> bruges til …”
+                    &quot;Loopet i <code>drawSnake()</code> bruges til ...&quot;
                   </li>
-                  <li>“Jeg ændrede …, og derfor skete …”</li>
+                  <li>&quot;Jeg ændrede ..., og derfor skete ...&quot;</li>
                 </ul>
               </div>
             </div>
@@ -422,42 +423,37 @@
 
             <div class="material-content">
               <p class="learning-goal">
-                <strong>Mål:</strong> Du kan planlægge en lille ændring, lave
-                den i en eksisterende kode, teste resultatet og forklare,
-                hvilken del af koden der skaber en synlig virkning i spillet.
+                <strong>Mål:</strong> Du kan planlægge, gennemføre og teste en
+                lille ændring i koden. Du kan forklare, hvilken kode der ændrer
+                spillet.
               </p>
 
               <p>
-                Fortsæt i din egen kopi, og brug arbejdsmetoden nedenfor til
-                hver udfordring. Vælg kun én lille ændring ad gangen: noget du
-                kan lave og teste, uden at du samtidig behøver ændre flere
-                andre dele af spillet. Du behøver ikke løse alle forslagene.
+                Fortsæt i din egen kopi. Vælg én ændring fra listerne, og brug
+                hele arbejdsmetoden, før du vælger den næste. Du behøver ikke
+                nå alle forslagene.
               </p>
 
               <div class="try-box">
-                <h3>Arbejdsmetode: planlæg, ændr og test</h3>
+                <h3>Sådan arbejder du iterativt</h3>
                 <p>
-                  Metoden kaldes <strong>iterativ udvikling</strong>. Dokumentér
-                  hver iteration øverst i din <code>sketch.js</code> med
-                  kommentarer.
+                  Skriv hvert trin som kommentarer øverst i din
+                  <code>sketch.js</code>.
                 </p>
                 <ol class="steps">
+                  <li>Skriv, hvad du vil ændre.</li>
                   <li>
-                    Skriv: “Jeg vil ændre …” Beskriv én lille, synlig ændring.
-                  </li>
-                  <li>
-                    Skriv, hvordan du tror, ændringen kan laves. Peg gerne på
-                    en variabel, funktion eller del af koden.
+                    Skriv, hvor i koden du tror, ændringen skal laves.
                   </li>
                   <li>Gem den seneste fungerende version af spillet.</li>
-                  <li>Lav kun den planlagte ændring.</li>
+                  <li>Lav kun denne ændring.</li>
                   <li>
-                    Test både ændringen og resten af spillet. Skete det, du
-                    forventede, og virker spillet stadig?
+                    Test ændringen. Kontrollér også, at resten af spillet
+                    stadig virker.
                   </li>
                   <li>
-                    Notér kort, hvad der skete. Behold ændringen, ret den, eller
-                    gå tilbage til den fungerende version.
+                    Skriv resultatet i kommentarerne. Behold ændringen, ret den
+                    eller gå tilbage til den fungerende version.
                   </li>
                 </ol>
                 <p>
@@ -465,10 +461,10 @@
                   vælger den næste ændring.
                 </p>
                 <pre class="code-block"><code>// TRIN 1
-// Plan: Jeg vil ...
-// Jeg tror, jeg skal ændre ...
-// Test: Jeg afprøvede ...
-// Resultat: ...</code></pre>
+// Ændring:
+// Plan:
+// Test:
+// Resultat:</code></pre>
               </div>
 
               <h3>Kom godt i gang</h3>
@@ -479,33 +475,37 @@
                 <li>Lad maden give to point i stedet for ét.</li>
               </ul>
 
-              <h3>Byg videre</h3>
+              <h3>Flere ændringer</h3>
               <ul class="requirements">
                 <li>Lad hastigheden stige, når slangen spiser.</li>
                 <li>Skift madens farve ved bestemte pointtal.</li>
-                <li>Giv spilleren en bonus ved et bestemt pointtal.</li>
-                <li>Ændr reglen ved væggen.</li>
+                <li>Giv fem bonuspoint, når scoren når 10.</li>
+                <li>
+                  Lad slangen fortsætte i den modsatte side, når den rammer en
+                  væg.
+                </li>
                 <li>Tilføj en tydelig startbesked eller en ny genstartregel.</li>
               </ul>
 
               <div class="stretch-box">
                 <h3>Små, ekstra udfordringer</h3>
                 <ul>
-                  <li>Vis en kort besked, når spilleren får point.</li>
+                  <li>Vis beskeden &quot;Godt gået!&quot;, når spilleren får point.</li>
                   <li>Lad slangens farve afhænge af dens længde.</li>
                   <li>Tilføj en tast, der kan genstarte spillet.</li>
                   <li>
-                    Saml en afgrænset, gentaget kodedel i en ny funktion, og
-                    forklar hvorfor.
+                    Flyt gentaget kode til en ny funktion. Forklar, hvad
+                    funktionen gør.
                   </li>
                 </ul>
               </div>
 
-              <p>
-                Du er klar til næste fase, når du kan pege på arrayet og et
-                loop samt vise planen, testen og resultatet af mindst én
-                fungerende ændring.
-              </p>
+              <h3>Klar til fase 3?</h3>
+              <ul class="requirements">
+                <li>Du kan finde arrayet og mindst ét loop.</li>
+                <li>Dine kommentarer viser plan, test og resultat.</li>
+                <li>Du kan vise og forklare mindst én ændring, der virker.</li>
+              </ul>
             </div>
           </details>
 
@@ -514,7 +514,7 @@
               <span class="course-number" aria-hidden="true">06</span>
               <span class="summary-text">
                 <strong>Fase 3: Udvid Snake eller byg et spil</strong>
-                <span>Create: vælg en mission, del den op, og byg den</span>
+                <span>Create med en større udvidelse eller et nyt spil</span>
               </span>
               <span class="toggle-label" aria-hidden="true">Åbn</span>
             </summary>
@@ -522,102 +522,103 @@
             <div class="material-content">
               <p class="learning-goal">
                 <strong>Mål:</strong> Du kan dele en større programmeringsopgave
-                op i små, testbare trin, dokumentere processen og forklare dit
-                array, dit loop og en ændring, der påvirker flere dele af koden.
+                op i små trin og dokumentere arbejdet. Du kan forklare, hvordan
+                dit array, dit loop og din udvidelse hænger sammen.
               </p>
 
               <h3>Vælg én mission</h3>
               <p>
-                De tre første missioner er større udvidelser af Snake. Den
-                sidste er en ekstra udfordring, hvor du bygger et nyt spil fra
-                bunden. Du skal kun vælge én.
+                Vælg én af de tre udvidelser til Snake. Hvis du vil have en
+                større udfordring, kan du bygge et nyt spil fra bunden.
               </p>
 
               <h3>Arbejd iterativt</h3>
               <p>
-                Skriv missionen og den mindste version, der kan vises og
-                testes, øverst i koden. Del derefter arbejdet op i nummererede
-                trin. For hvert trin skriver du plan, forventning, test og
-                resultat som kommentarer, ligesom i Fase 2.
+                Skriv først, hvad den enkleste fungerende version skal kunne.
+                Del arbejdet op i nummererede trin. Brug kommentarskabelonen fra
+                fase 2 til hvert trin.
               </p>
 
               <h3>Mission 1: Snake med forhindringer</h3>
-              <p>Din minimumsversion skal:</p>
               <ul class="requirements">
-                <li>gemme forhindringernes placeringer i et array,</li>
-                <li>tegne dem med et loop,</li>
-                <li>afslutte spillet, hvis slangen rammer en forhindring,</li>
-                <li>forhindre mad i at blive placeret på en forhindring.</li>
+                <li>Gem forhindringernes placeringer i et array.</li>
+                <li>Tegn forhindringerne med et loop.</li>
+                <li>Stop spillet, hvis slangen rammer en forhindring.</li>
+                <li>Placér kun mad på felter uden forhindringer.</li>
               </ul>
               <p>
-                En mulig rækkefølge er: tegn én fast forhindring, gem flere i
-                et array, tegn dem med et loop, registrér kollision, og ret til
-                sidst placeringen af maden.
+                Start med at tegne én fast forhindring. Gem derefter flere
+                forhindringer i et array, og tegn dem med et loop. Få spillet
+                til at opdage, når slangen rammer en forhindring. Ret til sidst
+                placeringen af maden.
               </p>
 
               <h3>Mission 2: Snake med bonusmad</h3>
-              <p>Din minimumsversion skal:</p>
               <ul class="requirements">
-                <li>vise bonusmaden med et andet udseende,</li>
-                <li>placere den et tilfældigt sted,</li>
-                <li>give en særlig effekt,</li>
-                <li>få bonusmaden til at forsvinde igen efter noget tid,</li>
-                <li>nulstille bonusmaden korrekt ved genstart.</li>
+                <li>Giv bonusmaden et andet udseende.</li>
+                <li>Placér den et tilfældigt sted.</li>
+                <li>
+                  Giv ekstra point, ekstra længde eller lavere hastighed, når
+                  slangen spiser den.
+                </li>
+                <li>Lad bonusmaden forsvinde efter fem sekunder.</li>
+                <li>Fjern bonusmaden, når spilleren genstarter.</li>
               </ul>
               <p>
-                En mulig rækkefølge er: tegn bonusmad et fast sted, placér den
-                tilfældigt, registrér at slangen spiser den, tilføj effekten,
-                tilføj en timer, og ret genstarten.
+                Start med at tegne bonusmaden et fast sted. Giv den derefter en
+                tilfældig placering. Få spillet til at opdage, når slangen
+                spiser den. Tilføj effekten og en timer. Ret til sidst
+                genstarten.
               </p>
 
               <h3>Mission 3: Snake med levels</h3>
-              <p>Din minimumsversion skal:</p>
               <ul class="requirements">
-                <li>holde styr på og vise det aktuelle level,</li>
-                <li>skifte level ved bestemte pointtal,</li>
+                <li>Opret og vis det aktuelle level.</li>
+                <li>Skift level, når scoren når for eksempel 5 og 10.</li>
                 <li>
-                  ændre mindst to ting mellem levels, eksempelvis hastighed,
-                  farver, vægge eller forhindringer,
+                  Ændr mindst to ting mellem levels, eksempelvis hastighed,
+                  farver, vægge eller forhindringer.
                 </li>
-                <li>nulstille level korrekt ved genstart.</li>
+                <li>Sæt level tilbage til 1, når spilleren genstarter.</li>
               </ul>
               <p>
-                En mulig rækkefølge er: opret og vis <code>level</code>, skift
-                til level 2 ved et bestemt pointtal, ændr hastigheden, tilføj
-                en synlig ændring eller ny regel, og ret genstarten.
+                Start med at oprette og vise <code>level</code>. Skift derefter
+                til level 2 ved fem point. Ændr hastigheden. Skift derefter en
+                farve eller vægreglen, eller tilføj en forhindring. Ret til
+                sidst genstarten.
               </p>
 
               <div class="stretch-box">
                 <h3>Ekstra udfordring: Byg et nyt spil fra bunden</h3>
                 <p>
-                  Byg “Fang de faldende objekter” i en tom p5.js-skitse. Du må
+                  Byg &quot;Fang de faldende objekter&quot; i en tom p5.js-skitse. Du må
                   genbruge mønstre fra Snake, som du kan forklare.
                 </p>
                 <ul>
+                  <li>Spilleren styrer en figur nederst på skærmen.</li>
                   <li>
-                    En spiller bevæger sig til højre og venstre nederst.
-                  </li>
-                  <li>
-                    Faldende objekter gemmes i et array og bevæges og tegnes
-                    med et loop.
+                    Spillet gemmer de faldende objekter i et array. Et loop
+                    flytter og tegner dem.
                   </li>
                   <li>Spilleren får point ved at fange et objekt.</li>
                   <li>
-                    Objekter fjernes, når de er fanget eller forlader skærmen.
+                    Spillet fjerner objekter, når spilleren fanger dem, eller
+                    når de forlader skærmen.
                   </li>
-                  <li>Spillet har game over og kan genstartes.</li>
+                  <li>Spilleren kan genstarte efter game over.</li>
                 </ul>
                 <p>
-                  Byg først spilleren, derefter ét faldende objekt, så arrayet
-                  og til sidst fangst, point, game over og genstart.
+                  Byg først spilleren og styringen. Tilføj derefter ét faldende
+                  objekt. Flyt så objekterne til et array. Tilføj fangst, point,
+                  game over og genstart ét trin ad gangen.
                 </p>
               </div>
 
               <h3>Fælles krav</h3>
               <ul class="requirements">
-                <li>Spillet virker i en demonstrerbar minimumsversion.</li>
-                <li>Array og loop bruges meningsfuldt.</li>
-                <li>Dine trin er dokumenteret som kommentarer i koden.</li>
+                <li>Du har en enkel version af spillet, der virker.</li>
+                <li>Du bruger mindst ét array og ét loop.</li>
+                <li>Kommentarerne i koden viser dine trin.</li>
                 <li>
                   Du kan forklare et trin, et testresultat og en kodedel, du
                   har ændret.
@@ -627,17 +628,16 @@
               <div class="try-box">
                 <h3>Afslut med en makker</h3>
                 <p>
-                  Spil hinandens versioner. Fortæl hvad du lagde mærke til,
-                  hvilken regel du forstod med det samme, og hvad der kan
-                  testes eller forklares tydeligere. Notér til sidst én ændring,
-                  der virkede, ét problem og ét muligt næste skridt.
+                  Spil hinandens versioner. Vis derefter dine kommentarer og
+                  forklar et trin, der virkede, et problem du mødte, og hvad du
+                  vil lave som det næste.
                 </p>
               </div>
 
               <p>
                 Du må gerne diskutere og få hjælp af en makker, men du skal
                 arbejde i din egen skitse og forstå dine egne ændringer.
-                Generativ AI må ikke bruges i dette forløb.
+                Brug ikke generativ AI i dette forløb.
               </p>
             </div>
           </details>
