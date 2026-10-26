@@ -4,8 +4,8 @@
 
 Repositoryet er undervisningssite og materialebank for Programmering B 2026.
 Målgruppen er gymnasieelever med forskellige programmeringserfaringer. De skal
-møde kode roligt, konkret og eksperimenterende. De første aktiviteter foregår
-primært i p5.js Web Editor.
+møde kode roligt, konkret og eksperimenterende. Introforløbet bruger p5.js Web Editor. Fra dataforløbet henter eleverne
+kodeeksempler fra GitHub og arbejder lokalt i VS Code med Live Server.
 
 Skriv elevvendt tekst på dansk. Bevar engelske fagtermer, funktionsnavne og
 API-navne, når det gør kode og dokumentation lettere at genkende.

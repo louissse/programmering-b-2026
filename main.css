@@ -496,3 +496,30 @@ footer p {
     transition: none;
   }
 }
+
+.course-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 48px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--line);
+}
+
+.course-tabs a {
+  padding: 10px 14px;
+  border: 1px solid var(--line);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.course-tabs a[aria-current="page"] {
+  background: var(--heading);
+  color: var(--background);
+  border-color: var(--heading);
+}
+
+.course-tabs a:focus-visible {
+  outline: 2px solid var(--heading);
+  outline-offset: 3px;
+}

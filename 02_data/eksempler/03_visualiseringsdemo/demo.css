@@ -1,0 +1,12 @@
+body { background: #f5f3ee; }
+.demo { width: min(940px, 100% - 32px); margin: 36px auto; }
+header { margin: 40px 0 24px; }
+header p { margin-bottom: 10px; }
+.chart-panel { padding: 24px; margin-bottom: 24px; background: #fffdf7; border-radius: 18px; }
+#knapper { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 12px; }
+button { padding: 10px 20px; border: 1px solid #22242a; border-radius: 8px; background: #fff; color: #22242a; font: inherit; cursor: pointer; }
+button:hover { background: #d7ff62; }
+button:focus-visible { outline: 3px solid #426fba; outline-offset: 3px; }
+canvas { display: block; max-width: 100%; height: auto !important; }
+#forklaring { margin: 12px 0 0; font-size: 14px; min-height: 3.4em; }
+@media (max-width: 480px) { .chart-panel { padding: 12px; } button { padding: 8px 12px; } }

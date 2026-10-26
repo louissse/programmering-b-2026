@@ -16,13 +16,20 @@ Materialet bliver samlet på kursets hjemmeside:
 programmering-b-2026/
 ├── .agents/         # Lokal skill til undervisningsplanlægning
 ├── docs/            # Arbejdsgrundlag, faglige kilder og beslutninger
-├── index.html       # Forsiden til undervisningssiden
+├── index.html       # Forsiden med Intro til Programmering
+├── 02_data/         # Data, Visualisering og APIer
 ├── main.css         # Sidens udseende
 └── studietur/       # Særlig opgaveside til dataindsamling på studietur
 ```
 
-Nye forløb får deres egen nummererede mappe, så materialerne bliver vist i den
-rækkefølge, vi arbejder med dem.
+Forløbsfanerne forbinder introforløbet på forsiden med Data, Visualisering og
+APIer i `02_data/`. Nye forløb får deres egen nummererede mappe.
+
+Uge 44 og 45 handler om arrays, objekter, JSON, datavisualisering og test. Eleverne indsamler
+egne data til uge 45. En [interaktiv demo](02_data/eksempler/03_visualiseringsdemo/)
+viser samme datasæt som søjler, bobler og ugehjul. Startprojektet ligger i
+[`02_data/eksempler/01_soejlediagram/`](02_data/eksempler/01_soejlediagram/).
+Eleverne henter kodeeksempler fra GitHub og kører dem lokalt med Live Server.
 
 ## Dokumentation
 

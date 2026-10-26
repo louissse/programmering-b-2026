@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="da">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Undervisningsmaterialer, links og kode til Programmering B."
+    >
+    <title>Data, Visualisering og APIer · Programmering B</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;500;700&amp;display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="../main.css?v=2026-10-26">
+  </head>
+
+  <body>
+    <main id="wrapper">
+      <header class="site-header compact-header">
+        <p class="eyebrow">Programmering B · 2026</p>
+        <h1>Data, Visualisering og APIer</h1>
+        <p class="intro">Her finder du materialerne til forløbet, der begyndte i uge 41.</p>
+      </header>
+
+      <nav class="course-tabs" aria-label="Forløb">
+        <a href="../index.html">Intro til Programmering</a>
+        <a href="./" aria-current="page">Data, Visualisering og APIer</a>
+      </nav>
+
+      <section aria-labelledby="uge-41">
+        <h2 id="uge-41">Forløb og materialer</h2>
+        <p class="section-note">Hent kodeeksempler fra GitHub, og arbejd lokalt
+          i VS Code med Live Server. Åbn den uge, vi arbejder med.</p>
+
+        <div class="week-overview">
+          <p class="week-number">Uge 41</p>
+          <p>
+            <strong>Ugens arbejde:</strong> Vi installerede VS Code og Live Server,
+            slog AI-hjælp fra og testede vores p5.js-kode lokalt.
+          </p>
+        </div>
+
+        <div class="material-list">
+          <details id="lokalt-udviklingsmiljoe" class="material-card">
+            <summary>
+              <span class="course-number" aria-hidden="true">01</span>
+              <span class="summary-text">
+                <strong>Lokalt udviklingsmiljø</strong>
+                <span>VS Code, Live Server og din kode fra p5.js Web Editor</span>
+              </span>
+              <span class="toggle-label" aria-hidden="true">Åbn</span>
+            </summary>
+
+            <div class="material-content">
+              <p>
+                I uge 41 satte vi vores lokale udviklingsmiljø op.
+                Her kan du følge trinene igen, hvis du var fraværende
+                eller har brug for at få opsætningen på plads.
+              </p>
+
+              <h3>Installér værktøjerne</h3>
+              <ol class="steps">
+                <li>Hent og installér <a href="https://code.visualstudio.com/download">Visual Studio Code</a>
+                  til din computer.</li>
+                <li>Åbn Extensions i VS Code. Søg efter
+                  <a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer">Live Server af Ritwick Dey</a>,
+                  og installér udvidelsen.</li>
+                <li>Åbn indstillingerne i VS Code, vælg brugerindstillingerne, og søg efter
+                  <code>chat.disableAIFeatures</code>. Slå <strong>Chat: Disable AI Features</strong>
+                  til. Det slår de indbyggede AI-funktioner og Copilot fra.
+                  Har du installeret andre udvidelser med AI-hjælp, skal du også deaktivere dem.
+                  Se <a href="https://code.visualstudio.com/docs/agents/agent-troubleshooting/faq">VS Codes vejledning om at slå AI fra</a>.</li>
+              </ol>
+
+              <h3>Åbn din p5.js-skitse lokalt</h3>
+              <ol class="steps">
+                <li>Åbn en af dine fungerende skitser i
+                  <a href="https://editor.p5js.org/">p5.js Web Editor</a>, og download
+                  projektet via menuen File. Pak ZIP-filen ud.</li>
+                <li>Vælg File → Open Folder i VS Code, og åbn den udpakkede projektmappe.
+                  Åbn hele mappen, så både HTML-filen, din JavaScript-kode og eventuelle
+                  billeder og andre filer er med.</li>
+                <li>Find <code>index.html</code> i filoversigten. Højreklik på filen,
+                  og vælg <strong>Open with Live Server</strong>.
+                  Skitsen åbner nu i browseren via en lokal server.</li>
+                <li>Kontrollér, at skitsen ser ud og reagerer som i webeditoren.
+                  Afprøv også den interaktion, du har lavet med mus eller tastatur.</li>
+                <li>Lav en lille synlig ændring i <code>sketch.js</code>, og gem filen.
+                  Kontrollér i browseren, at ændringen vises.</li>
+              </ol>
+
+              <div class="try-box">
+                <h3>Hvis skitsen ikke virker</h3>
+                <ul>
+                  <li>Kontrollér, at du har pakket ZIP-filen ud og åbnet den rigtige mappe.</li>
+                  <li>Start siden med Live Server via <code>index.html</code>.</li>
+                  <li>Kontrollér filnavne og stier til billeder, lyd og andre filer.</li>
+                  <li>Se efter fejl i browserens konsol, og brug fejlbeskeden til at finde den relevante fil og linje.</li>
+                </ul>
+              </div>
+            </div>
+          </details>
+        </div>
+
+        <div id="uge-44" class="week-overview">
+          <p class="week-number">Uge 44 · 90 minutter</p>
+          <p><strong>Fra arrays til data.</strong> Vi undersøger et søjlediagram
+            og ændrer det med arrays, loops og betingelser.</p>
+        </div>
+
+        <div class="material-list">
+          <details id="arrays-til-data" class="material-card">
+            <summary>
+              <span class="course-number" aria-hidden="true">02</span>
+              <span class="summary-text">
+                <strong>Byg videre på et søjlediagram</strong>
+                <span>Data, søjler, tekst og farver</span>
+              </span>
+              <span class="toggle-label" aria-hidden="true">Åbn</span>
+            </summary>
+            <div class="material-content">
+              <p class="learning-goal"><strong>Mål:</strong> Du kan forklare,
+                hvordan et loop tegner værdierne i et array, og ændre diagrammet.</p>
+
+              <h3>1. Fælles start · 10 min.</h3>
+              <p>Vi ser et diagram med opdigtede temperaturer. Hvad sker der,
+                hvis vi ændrer et tal eller tilføjer en værdi?</p>
+
+              <h3>2. Hent og undersøg koden · 15 min.</h3>
+              <p><a class="primary-link"
+                href="https://github.com/louissse/programmering-b-2026/tree/main/02_data/eksempler/01_soejlediagram">Find startprojektet på GitHub</a></p>
+              <ol class="steps">
+                <li>Åbn <a href="https://github.com/louissse/programmering-b-2026">repositoryet</a>.
+                  Vælg Code → Download ZIP, og pak filen ud.</li>
+                <li>Åbn mappen <code>02_data/eksempler/01_soejlediagram</code>
+                  i VS Code. Start <code>index.html</code> med Live Server.</li>
+                <li>Åbn <code>sketch.js</code>. Find arrayet og loopet.
+                  Følg sammen, hvordan én værdi bliver til én søjle.</li>
+              </ol>
+
+              <h3>3. Ændr diagrammet · 30 min.</h3>
+              <ol class="steps">
+                <li>Ændr to temperaturer. Gæt resultatet, før du kører koden.</li>
+                <li>Fjern en værdi, og tilføj den igen. Hvad styrer antallet af søjler?</li>
+                <li>Vis temperaturen over hver søjle med <code>text()</code>.
+                  Brug samme arrayværdi og x-position som søjlen.</li>
+              </ol>
+              <p>Hjælp: <a href="https://p5js.org/reference/p5/text/">text()</a>
+                og <a href="https://p5js.org/reference/p5/rect/">rect()</a>.</p>
+
+              <h3>4. Tilføj farver · 20 min.</h3>
+              <p>Brug <code>if/else</code> til at give temperaturer på mindst
+                18 °C en anden farve. Lav én ændring ad gangen, gem og test.</p>
+              <div class="stretch-box">
+                <h3>Videre herfra</h3>
+                <p>Tilføj flere målinger. Beregn afstanden mellem søjlerne ud fra
+                  arrayets længde, så de stadig passer på lærredet.</p>
+              </div>
+
+              <h3>5. Vis og forklar · 15 min.</h3>
+              <p>Vis diagrammet til en makker. Forklar forskellen på
+                <code>i</code> og <code>temperaturer[i]</code>.</p>
+              <p>Skriv korte kommentarer ved loopet og din betingelse.
+                Forklar, hvad de gør, og hvorfor du har valgt grænsen for farveskift.
+                Gem projektet.</p>
+              <div class="try-box">
+                <h3>Lektie til uge 45 · Indsaml dine egne data</h3>
+                <p>Vælg noget fra din hverdag, fx minutter med musik, transporttid
+                  eller antal cykler, du møder på vej til skole.</p>
+                <ul>
+                  <li>Indsaml 5–7 målinger inden næste modul. Brug samme enhed
+                    og samme måde at måle på hver gang.</li>
+                  <li>Notér tidspunkt eller kategori, tal og enhed for hver måling.
+                    De bliver felter i et objekt, når vi samler dataene i uge 45.</li>
+                  <li>Vælg noget, du har lyst til at vise andre. Medbring tallene
+                    og en kort forklaring på, hvordan du målte.</li>
+                </ul>
+                <p>Du kan også tælle fx bøger, planter eller kopper i forskellige
+                  rum, hvis du vil indsamle det hele på én dag.</p>
+              </div>
+
+            </div>
+          </details>
+        </div>
+
+        <div id="uge-45" class="week-overview">
+          <p class="week-number">Uge 45 · 90 minutter</p>
+          <p><strong>Visualisér din hverdag.</strong> Du skriver dit eget array og loop
+            og vælger, hvordan dine målinger skal vises.</p>
+        </div>
+
+        <div class="material-list">
+          <details id="udbyg-test-forklar" class="material-card">
+            <summary>
+              <span class="course-number" aria-hidden="true">03</span>
+              <span class="summary-text">
+                <strong>Dine data, dit udtryk</strong>
+                <span>Egne målinger, objekter og loops</span>
+              </span>
+              <span class="toggle-label" aria-hidden="true">Åbn</span>
+            </summary>
+            <div class="material-content">
+              <p class="learning-goal"><strong>Mål:</strong> Du kan selv skrive
+                et array med objekter og et loop, der viser dine data.
+                Du kan forklare din løsning og genkende dataene som JSON.</p>
+
+              <h3>1. Samme data, forskellige udtryk · 10 min.</h3>
+              <p>Vi genopfrisker arrays og loops fra uge 44 og undersøger
+                <a class="primary-link" href="eksempler/03_visualiseringsdemo/">En uge i musik</a>.
+                Skift mellem søjler, bobler og ugehjul. Hvilken visning gør det
+                lettest at sammenligne dagene? Hvordan bruges den samme værdi
+                til at tegne forskellige figurer?</p>
+
+              <h3>2. Fra måling til objekt og JSON · 15 min.</h3>
+              <p>Et objekt samler oplysninger om én måling. Vi bruger felterne
+                <code>navn</code>, <code>vaerdi</code> og <code>enhed</code>.
+                Et array holder styr på flere målinger.</p>
+              <p>Vi undersøger <a href="https://github.com/louissse/programmering-b-2026/tree/main/02_data/eksempler/04_objekter_json">samme data som JavaScript og JSON på GitHub</a>.
+                Find én måling, og læs dens felter. Vi prøver at hente dens
+                <code>vaerdi</code> med punktnotation.</p>
+              <p>JSON er et tekstformat til data. Feltnavne og tekst står i
+                dobbelte anførselstegn. JSON har hverken variabeldeklarationer
+                eller kommentarer. I dag skriver vi objekterne i JavaScript.
+                Senere indlæser vi dem fra en JSON-fil.</p>
+
+              <h3>3. Skriv dit eget array og loop · 45 min.</h3>
+              <p>Gem arbejdet fra uge 44. Hent den
+                <a href="https://github.com/louissse/programmering-b-2026/tree/main/02_data/eksempler/02_egne_data">tomme skitse fra GitHub</a>,
+                og åbn den med Live Server som i uge 44.</p>
+              <ol class="steps">
+                <li>Skriv selv et array med ét objekt pr. indsamlet måling.
+                  Brug felterne <code>navn</code>, <code>vaerdi</code> og
+                  <code>enhed</code>. Mangler du data, så lav 5–7 opdigtede
+                  målinger og skriv tydeligt, at de er opdigtede.</li>
+                <li>Vælg et udtryk: søjler, cirkler, blomster, bygninger eller
+                  din egen idé. Beslut, hvad størrelse, placering eller farve viser.</li>
+                <li>Hent <code>vaerdi</code> fra det første objekt med
+                  punktnotation, og brug den til at tegne én figur.</li>
+                <li>Skriv et <code>for</code>-loop, der tegner én figur pr. værdi.
+                  Brug arrayets længde som grænse, og giv figurerne hver sin plads.</li>
+                <li>Vis værdier og enhed, og gør det tydeligt, hvad figurerne
+                  repræsenterer. Hent også navn og enhed fra objekterne.</li>
+              </ol>
+              <p>Skriv selv koden. Brug gerne p5.js-reference og dine noter.
+                Går du i stå, så undersøg én relevant del af eksemplet fra uge 44,
+                luk det igen, og prøv selv.</p>
+              <p>Kommentér, hvad loopet gør, og begrund dit valg af figurer
+                og skala. Skriv også, hvordan du indsamlede dine data.</p>
+              <div class="stretch-box">
+                <h3>Videre herfra</h3>
+                <p>Brug en betingelse til at fremhæve bestemte værdier,
+                  eller vis de samme data på to måder. Vil du videre,
+                  så saml tegningen i en funktion med arrayet som parameter.</p>
+              </div>
+
+              <h3>4. Test med en makker · 10 min.</h3>
+              <p>Test med en kopi af dine data. Prøv en måling med værdien 0,
+                en stor værdi og et andet navn. Prøv også et kortere og et længere array. Kan din makker aflæse data og enhed?
+                Find ud af, hvad din visualisering kan håndtere, og ret ét problem, hvis du finder et.</p>
+
+              <h3>5. Gem og saml op · 10 min.</h3>
+              <p>Gem projektet med dine kommentarer. Skriv kort øverst i
+                <code>sketch.js</code>, hvilke test du lavede, hvad de viste,
+                og hvad der endnu ikke virker.</p>
+              <p>Aflevér dit projekt i afleveringsmodulet i Teams.
+                Visualiseringen og din dokumentation indgår i vurderingen.
+                Der lægges vægt på din brug af arrays, objekter og loops,
+                dine forklaringer af kode og valg samt dine test.</p>
+              <div class="try-box">
+                <h3>Det skal du kunne forklare</h3>
+                <ul>
+                  <li>Hvordan arrayet, objekterne og loopet bruges.</li>
+                  <li>Hvordan du henter et felts værdi, og hvad JSON bruges til.</li>
+                  <li>Hvad du selv har ændret, og hvorfor du valgte den løsning.</li>
+                  <li>Hvordan du testede, og hvad testen viste.</li>
+                </ul>
+
+              </div>
+            </div>
+          </details>
+        </div>
+      </section>
+    </main>
+    <footer><p>Programmering B · Louise Høpfner · 2026</p></footer>
+  </body>
+</html>
