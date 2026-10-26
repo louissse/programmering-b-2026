@@ -12,4 +12,4 @@ Gem en kopi af dit arbejde fra uge 44, før du fortsætter i uge 45.
 
 Dokumentér dine ændringer med korte kommentarer i koden. Forklar formålet og
 begrund dine valg. Notér test og resultater øverst i `sketch.js`.
-Aflevér dit projekt i afleveringsmodulet i Teams.
+
