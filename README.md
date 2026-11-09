@@ -14,8 +14,7 @@ Materialet bliver samlet på kursets hjemmeside:
 
 ```text
 programmering-b-2026/
-├── .agents/         # Lokal skill til undervisningsplanlægning
-├── docs/            # Arbejdsgrundlag, faglige kilder og beslutninger
+├── .agents/         # Lokale skills til AI
 ├── index.html       # Forsiden med Intro til Programmering
 ├── 02_data/         # Data, Visualisering og APIer
 ├── main.css         # Sidens udseende
@@ -30,12 +29,6 @@ egne data til uge 45. En [interaktiv demo](02_data/eksempler/03_visualiseringsde
 viser samme datasæt som søjler, bobler og ugehjul. Startprojektet ligger i
 [`02_data/eksempler/01_soejlediagram/`](02_data/eksempler/01_soejlediagram/).
 Eleverne henter kodeeksempler fra GitHub og kører dem lokalt med Live Server.
-
-## Dokumentation
-
-Agenters og underviseres arbejdsgrundlag findes i
-[`docs/README.md`](docs/README.md). Her ligger også de versionsbestemte
-officielle kilder til planlægning af Programmering B.
 
 ## Hent materialet
 
