@@ -295,6 +295,84 @@
             </div>
           </details>
         </div>
+        <div id="uge-46" class="week-overview">
+          <p class="week-number">Uge 46 · 90 minutter</p>
+          <p><strong>Pokémon fra et API.</strong> Hent data fra nettet, undersøg
+            dem i browseren, og udvid et Pokémon-kort.</p>
+        </div>
+
+        <div class="material-list">
+          <details id="pokemon-api" class="material-card">
+            <summary>
+              <span class="course-number" aria-hidden="true">04</span>
+              <span class="summary-text">
+                <strong>Hent og vis Pokémon</strong>
+                <span>API, JSON og async/await</span>
+              </span>
+              <span class="toggle-label" aria-hidden="true">Åbn</span>
+            </summary>
+            <div class="material-content">
+              <p class="learning-goal"><strong>Mål:</strong> Du kan hente data med
+                <code>await loadJSON()</code>, finde felter i svaret og vise dem med p5.js.</p>
+
+              <h3>1. Fælles start · 10 min.</h3>
+              <p>Vi ser <a href="eksempler/05_pokemon/">Pokémon-kortet</a> og følger
+                data fra <a href="https://pokeapi.co/">PokéAPI</a> til skærmen.
+                Et API giver vores kode adgang til data via en URL.</p>
+
+              <h3>2. Undersøg og ændr · 15 min.</h3>
+              <p>Hent Pokémon-eksemplet i Teams, og pak ZIP-filen ud.
+                Åbn projektmappen i VS Code, og start <code>index.html</code>
+                med Live Server.</p>
+              <ol class="steps">
+                <li>Åbn browserens developer tools med højreklik → Inspicer.
+                  Find <strong>Console</strong>, og fold dataobjektet ud.
+                  Find <code>name</code>, <code>height</code> og <code>types</code>.
+                  Hvilke værdier er tal, og hvor er der et array?</li>
+                <li>Vælg <strong>Network</strong>, og genindlæs siden.
+                  Find kaldet til <code>pokeapi.co</code>, eventuelt med filteret Fetch/XHR.
+                  Åbn Preview eller Response. Find navnet i svaret og URL'en under Headers.</li>
+                <li>Skift <code>pokemonNavn</code> til fx <code>"eevee"</code> eller
+                  <code>"1"</code>. Gem. Hvad ændres på kortet og i API-kaldet?</li>
+              </ol>
+
+              <h3>3. Video og opsamling · 15 min.</h3>
+              <p>Se <a href="https://thecodingtrain.com/tracks/p5js-2.0/p5js-2.0/loading-data">Coding Train: Loading Data (Images, APIs, JSON)</a>
+                fra <strong>0:00 til 8:21</strong>. Hold pause undervejs.
+                Find derefter <code>async</code> og de to <code>await</code> i vores kode.
+                Forklar til en makker, hvorfor vi henter JSON før billedet.</p>
+              <p>Supplerende forklaring:
+                <a href="https://thecodingtrain.com/tracks/p5js-2.0">Coding Train: async and await</a>,
+                6:11–13:57. Reference: <a href="https://p5js.org/reference/p5/async_await/">async/await i p5.js</a>.</p>
+
+              <h3>4. Udvid dit kort · 40 min.</h3>
+              <ol class="steps">
+                <li>Vælg en Pokémon. Find to ekstra oplysninger i konsollen,
+                  og vis dem på kortet med <code>text()</code>.
+                  Højden er i decimeter, og <code>types[0].type.name</code> giver den første type.</li>
+                <li>Undersøg <code>pokemon.stats</code>. Hvert objekt har en
+                  <code>base_stat</code> og et navn i <code>stat.name</code>.
+                  Brug et loop til at vise navn og værdi for hver statistik.</li>
+                <li>Tegn en søjle for hver statistik. Lad længden følge
+                  <code>base_stat</code>, og giv søjlerne hver sin y-position.
+                  Gør lærredet større, hvis du mangler plads.</li>
+              </ol>
+              <p>Lav én ændring ad gangen. Brug p5.js til tekst, farver og figurer.
+                Skriv korte kommentarer, der forklarer dine valg.</p>
+              <div class="stretch-box">
+                <h3>Ekstra</h3>
+                <p>Giv høje statistikker en anden farve med <code>if/else</code>,
+                  eller vis alle Pokémonens typer med et loop.</p>
+              </div>
+
+              <h3>5. Test og forklar · 10 min.</h3>
+              <p>Test med en anden Pokémon og derefter et navn, der ikke findes.
+                Se både kortet, Console og Network. Forklar til en makker,
+                hvordan URL, JSON, objekt og visning hænger sammen.
+                Gem, og notér kort dine test øverst i koden.</p>
+            </div>
+          </details>
+        </div>
       </section>
     </main>
     <footer><p>Programmering B · Louise Høpfner · 2026</p></footer>
